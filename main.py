@@ -8,6 +8,6 @@ with open("response.json", "r") as read_file:
 app = FastAPI()
 
 # Endpoint untuk mendapatkan seluruh data
-@app.get("/posts")
+@app.get("/")
 async def get_all_posts():
     return data
